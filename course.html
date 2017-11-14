@@ -1,0 +1,1191 @@
+<!DOCTYPE html>
+<!--[if lte IE 9]><html class="ie ie9 lte9" lang="en"><![endif]-->
+<!--[if !IE]><!--><html lang="en"><!--<![endif]-->
+<head dir="ltr">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="content.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.2/css/mdb.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intro.js/2.5.0/introjs.min.css" />
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="/static/code-institute-ficus/js/lessons.a730c215ca8c.js"></script>
+    <script src="/static/code-institute-ficus/js/tutoredstudents.e107a1ae6b41.js"></script>
+    <script src="/static/code-institute-ficus/js/combobox.1e6347ffaa80.js"></script> 
+    <script src="/static/code-institute-ficus/js/intercomapicall.fb113df672c4.js"></script>
+
+
+
+  
+      <title>
+       Dashboard | CodeInstitute
+      </title>
+  
+
+      <script type="text/javascript">
+        /* immediately break out of an iframe if coming from the marketing website */
+        (function(window) {
+          if (window.location !== window.top.location) {
+            window.top.location = window.location;
+          }
+        })(this);
+      </script>
+
+  
+
+  <script type="text/javascript" src="/static/js/i18n/en/djangojs.b28203373cc1.js"></script>
+
+  <link rel="icon" href="/static/code-institute-ficus/images/favicon-ie.ico" type="image/x-icon">
+  <link rel="icon" href="/static/code-institute-ficus/images/favicon.png">
+  
+  
+
+    <link href="4ccaa7f84216.css" rel="stylesheet" type="text/css" />
+
+
+
+  
+  
+
+    <link href="3ea501ace9bd.css" rel="stylesheet" type="text/css" />
+
+
+
+
+      
+    <script type="text/javascript" src="/static/code-institute-ficus/js/lms-base-vendor.15f98b938c5a.js" charset="utf-8"></script>
+
+
+      
+    <script type="text/javascript" src="/static/code-institute-ficus/js/lms-base-application.1ac3273f2db2.js" charset="utf-8"></script>
+
+
+
+  <script>
+    window.baseUrl = "/static/";
+    (function (require) {
+      require.config({
+          baseUrl: window.baseUrl
+      });
+    }).call(this, require || RequireJS.require);
+  </script>
+  <script type="text/javascript" src="/static/lms/js/require-config.7181341023ea.js"></script>
+  
+    <script type="text/javascript">
+        (function (require) {
+          require.config({
+              paths: {
+                'js/courseware/courseware_factory': 'js/courseware/courseware_factory.1504fc10caef',
+'draggabilly': 'js/vendor/draggabilly.26caba6f7187',
+'js/courseware/course_home_events': 'js/courseware/course_home_events.f9fa9db95688',
+'js/dateutil_factory': 'js/dateutil_factory.f141a7899e5d',
+'course_bookmarks/js/views/bookmark_button': 'course_bookmarks/js/views/bookmark_button.59e957d21d61',
+'js/courseware/accordion_events': 'js/courseware/accordion_events.6064c7809de5',
+'hls': 'common/js/vendor/hls.b10b9ef4015b',
+'js/courseware/toggle_element_visibility': 'js/courseware/toggle_element_visibility.22ad04bb0497',
+'js/courseware/link_clicked_events': 'js/courseware/link_clicked_events',
+'moment': 'common/js/vendor/moment-with-locales.084396f4103c',
+'moment-timezone': 'common/js/vendor/moment-timezone-with-data.b062d5eadf09',
+'js/views/message_banner': 'js/views/message_banner.099aec538f98',
+'js/groups/discussions_management/discussions_dashboard_factory': 'js/discussions_management/views/discussions_dashboard_factory.2e10d9097343',
+'js/student_account/logistration_factory': 'js/student_account/logistration_factory.39b8b2b9e9a9',
+'js/student_profile/views/learner_profile_factory': 'js/student_profile/views/learner_profile_factory.12133a9ab694',
+'js/groups/views/cohorts_dashboard_factory': 'js/groups/views/cohorts_dashboard_factory.8ad700838f0f'
+            }
+          });
+        }).call(this, require || RequireJS.require);
+    </script>
+  
+
+
+  
+
+  
+
+  
+
+
+  
+
+
+<!-- dummy Segment -->
+<script type="text/javascript">
+  var analytics = {
+    track: function() { return; },
+    trackLink: function() { return; },
+    pageview: function() { return; },
+    page: function() { return; }
+  };
+</script>
+<!-- end dummy Segment -->
+
+
+  <meta name="path_prefix" content="">
+  <meta name="google-site-verification" content="_mipQ4AtZQDNmbtOkwehQDOgCxUUV2fb_C0b6wbiRHY" />
+
+
+
+</head>
+
+<body class="ltr view-dashboard is-authenticated lang_en">
+<div class="video-layer"></div>
+
+<div id="page-prompt"></div>
+  <div class="window-wrap" dir="ltr">
+  
+  <div class="video-modal">
+    <span class="video-close">X</span>
+  </div>
+    <a class="nav-skip" href="#main">Skip to main content</a>
+
+        
+
+
+
+
+
+
+  
+
+
+<header id="global-navigation" class="header-global">
+  <nav aria-label="Global">
+    <h1 class="logo">
+      <a href="/">
+        
+          <img src="/static/code-institute-ficus/images/logo.d6533fc5cf3e.svg" alt="CodeInstitute Home Page"/>
+        
+      </a>
+    </h1>
+
+
+    <div class="header-spacer"></div>
+
+      
+      <div class="header-account">
+        <img class="header-account__userimage" src="/media//profile-images/9d4a1a8b27a75df63eb54687a5180aa7_50.jpg?v=1509679671" alt="">
+        <div class="header-account__username">tomaisinrua</div>
+      </div>
+
+    <a class="nav-trigger " href="#0"><span></span></a>
+  </nav>
+</header>
+
+
+<div class="nav-drawer ">
+  <img class="logo-img" src="/static/code-institute-ficus/images/logo-circle.0dafd9084264.png" alt="CodeInstitute Home Page"/>
+  <ul>
+      
+          <li>
+            <a href="/courses">Find Courses</a>
+          </li>
+      
+
+      <li>
+        <a href="/dashboard" class="user-link">My Courses</a>
+      </li>
+
+      
+        <li><a href="/account/settings">Account Settings</a></li>
+        <li><a href="/u/tomaisinrua">My Profile</a></li>
+      
+      <li><a href="/logout" role="menuitem">Sign Out</a></li>
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+<!-- Scripts for sidebarNav and footer sticky -->
+<script type="text/javascript">
+  // sidebar menu
+  $('.nav-trigger').on('click', function(e){
+    e.preventDefault();
+
+    $('body').toggleClass('no-scroll');
+    $('.nav-trigger, .nav-drawer').toggleClass('active');
+  });
+</script>
+
+
+    <div class="content-wrapper container main-container" id="content">
+      
+
+
+  
+
+
+    
+
+
+      
+
+
+
+<script type="text/template" id="donation-tpl">
+  <div class="donation-error-msg" />
+<form class="nav-item donate-form">
+    <span class="monetary-symbol">$</span>
+    <input class="amount" type="text" name="amount" value="10" />
+    <button class="btn action-primary action-donate" type="submit" name="Donate"><%- gettext('Donate') %></button>
+</form>
+<form class="payment-form"></form>
+
+</script>
+
+
+
+
+<div class="dashboard-notifications" tabindex="-1">
+
+
+
+
+</div>
+<script data-cfasync="false">
+        (function(r, e, E, m, b) {
+            E[r] = E[r] || {};
+            E[r][b] = E[r][b] || function() {
+                (E[r].q = E[r].q || []).push(arguments)
+            };
+            b = m.getElementsByTagName(e)[0];
+            m = m.createElement(e);
+            m.async = 1;
+            m.src = ("file:" == location.protocol ? "https:" : "") + "//s.reembed.com/G-1g5L3X.js";
+            b.parentNode.insertBefore(m, b)
+        })("reEmbed", "script", window, document, "api");
+    </script>
+
+<main id="main" aria-label="Content" tabindex="-1">
+  <header class="dashboard-intro">
+     <div class="video-container">
+        <div class="video-image"></div>
+        <span class="btn btn-orange btn-video">Watch the video</span>
+     </div>
+   </header>
+   
+    <script type="text/javascript">
+     $(document).ready(function(){
+       var iframeAdd = '<iframe width="853" height="510" src="https://embed.reembed.com/player/1KVhe23EiC0m1cgTvh3JeTCz" allowfullscreen></iframe>';
+       var iframeRemove = $(".video-modal iframe");
+       
+       $(".btn-video, .video-close, .video-layer").on("click touch", function() {
+         $(".video-modal").toggleClass("show");
+         $(".video-layer").toggleClass("show");
+         $("body").toggleClass("video-modal-show");
+         
+          $('html, body').animate({scrollTop: '0px'}, 500);
+       }); 
+       
+       // add iframe 
+       $(".btn-video").on("click touch", function(){
+         $(".video-modal").append(iframeAdd);
+       });
+       
+       // remove iframe
+       $(".video-close, .video-layer").on("click touch", function() {
+         $(iframeRemove).remove();
+       });
+       
+     
+     });
+   </script>
+    <div class="dashboard-container container">
+      <div id="dashboard-search-bar" class="search-bar dashboard-search-bar" role="search" aria-label="Dashboard">
+        <form class="search-form">
+          <label for="dashboard-search-input">Search Your Courses</label>
+          <div class="search-field-wrapper">
+            <input id="dashboard-search-input" type="text" class="search-field"/>
+            <button type="submit" class="search-button" title="Search">
+              <span class="icon fa fa-search" aria-hidden="true"></span>
+            </button>
+            <button type="button" class="cancel-button" title="Clear search">
+              <span class="icon fa fa-remove" aria-hidden="true"></span>
+            </button>
+          </div>
+        </form>
+      </div>
+      <div id="dashboard-search-results" class="search-results dashboard-search-results"></div>
+    </div>
+
+  <div class="dashboard" id="dashboard-main">
+    <div class="my-courses" id="my-courses">
+
+        <ul class="courses-list listing-courses">
+        
+        
+          
+            
+              
+                
+                  
+                    
+                      
+                        
+                          
+                            
+                              
+                                
+
+
+
+
+
+
+
+<li class="course-item">
+    
+  <div class="course-container container">
+    <article class="course">
+      
+      <section class="course-item details" aria-labelledby="details-heading-PF101">
+        <h2 class="hd hd-2 sr" id="details-heading-PF101">Course details</h2>
+        <div class="wrapper-course-image" aria-hidden="true">
+              <a href="/courses/course-v1:CodeInstitute+PF101+2017_T1/info" data-course-key="course-v1:CodeInstitute+PF101+2017_T1" class="course-item__image">
+                <img src="/asset-v1:CodeInstitute+PF101+2017_T1+type@asset+block@rsz_1lms_icon-06.png" class="course-image" alt="PF101 Python Fundamentals Home Page" />
+              </a>
+
+
+          <div class="date-info">
+            
+
+              
+              <span class="info-date-block localized-datetime" data-language="en" data-tooltip="Hi" data-timezone="None" data-datetime="2017-01-01T00:00:00+0000" data-format=shortDate data-string="Started - {date}"></span>
+          </div>
+        </div>
+        <div class="course-item__info">
+          <h1 class="course-name">
+                <a data-course-key="course-v1:CodeInstitute+PF101+2017_T1" href="/courses/course-v1:CodeInstitute+PF101+2017_T1/info">Python Fundamentals</a>
+          </h1>
+
+            <p class="course-description">Python (yes, named after Monty Python) is a powerful general purpose language. It is considered more readable and intuitive than other languages that serve the same purpose. 
+
+The language can be used to build web or app prototypes, web development, simple scripting and data analysis. From a web point of view, Python can create web applications on many levels of complexity. </p>
+
+          <div class="course-item__actions course-actions">
+                  <a href="/courses/course-v1:CodeInstitute+PF101+2017_T1/info" class="btn btn-orange enter-course" data-course-key="course-v1:CodeInstitute+PF101+2017_T1">View Course<span class="sr">&nbsp;Python Fundamentals</span></a>
+
+                
+            <div class="wrapper-action-more" data-course-key="course-v1:CodeInstitute+PF101+2017_T1">
+              <button type="button" class="action action-more" id="actions-dropdown-link-0" aria-haspopup="true" aria-expanded="false" aria-controls="actions-dropdown-0" data-course-number="PF101" data-course-name="Python Fundamentals" data-dashboard-index="0">
+                <span class="sr">Course options for</span>
+                <span class="sr">&nbsp;
+                  Python Fundamentals
+                </span>
+                <span class="fa fa-cog" aria-hidden="true"></span>
+              </button>
+              <div class="actions-dropdown" id="actions-dropdown-0" tabindex="-1">
+                <ul class="actions-dropdown-list" id="actions-dropdown-list-0" aria-label="Available Actions" role="menu">
+                    <li class="actions-item" id="actions-item-unenroll-0">
+                      <a href="#unenroll-modal" class="action action-unenroll" rel="leanModal" data-course-id="course-v1:CodeInstitute+PF101+2017_T1" data-course-number="PF101" data-course-name="Python Fundamentals" data-dashboard-index="0"
+                         data-track-info="Are you sure you want to unenroll from %(course_name)s (%(course_number)s)?">
+                        Unenroll
+                      </a>
+                  </li>
+                  <li class="actions-item" id="actions-item-email-settings-0">
+                        <a href="#email-settings-modal" class="action action-email-settings" rel="leanModal" data-course-id="course-v1:CodeInstitute+PF101+2017_T1" data-course-number="PF101" data-dashboard-index="0" data-optout="False">Email Settings</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="wrapper-messages-primary">
+        <ul class="messages-list">
+
+
+
+
+
+
+
+
+        </ul>
+      </footer>
+    </article>
+  </div>
+</li>
+<script>
+ $( document ).ready(function() {
+   if("false" == 'true'){
+     $( "#unregister_block_course" ).click(function() {
+         $('.disable-look-unregister').click();
+     });
+   }
+ });
+</script>
+
+
+  
+  <script type="text/javascript">
+    (function (require) {
+        require(['/static/js/dateutil_factory.f141a7899e5d.js?raw'], function () {
+          require(['js/dateutil_factory'], function (DateUtilFactory) {
+            
+    DateUtilFactory.transform(iterationKey=".localized-datetime");
+
+          });
+        });
+    }).call(this, require || RequireJS.require);
+  </script>
+
+
+        
+          
+            
+              
+                
+                  
+                    
+                      
+                        
+                          
+                            
+                              
+                                
+
+
+
+
+
+
+
+<li class="course-item">
+    
+  <div class="course-container container">
+    <article class="course">
+      
+      <section class="course-item details" aria-labelledby="details-heading-JSF101">
+        <h2 class="hd hd-2 sr" id="details-heading-JSF101">Course details</h2>
+        <div class="wrapper-course-image" aria-hidden="true">
+              <a href="/courses/course-v1:CodeInstitute+JSF101+2017_T1/info" data-course-key="course-v1:CodeInstitute+JSF101+2017_T1" class="course-item__image">
+                <img src="/asset-v1:CodeInstitute+JSF101+2017_T1+type@asset+block@rsz_lms_icon-04.png" class="course-image" alt="JSF101 JavaScript Fundamentals Home Page" />
+              </a>
+
+
+          <div class="date-info">
+            
+
+              
+              <span class="info-date-block localized-datetime" data-language="en" data-tooltip="Hi" data-timezone="None" data-datetime="2017-01-01T00:00:00+0000" data-format=shortDate data-string="Started - {date}"></span>
+          </div>
+        </div>
+        <div class="course-item__info">
+          <h1 class="course-name">
+                <a data-course-key="course-v1:CodeInstitute+JSF101+2017_T1" href="/courses/course-v1:CodeInstitute+JSF101+2017_T1/info">JavaScript Fundamentals</a>
+          </h1>
+
+            <p class="course-description">JavaScript is a programming language that lets you enhance your HTML with animation, interactivity, and dynamic visual effects. It can make web pages more useful by supplying immediate feedback. For example, a JavaScript-powered shopping cart page can instantly display a total cost, with taxes and shipping, the moment a visitor selects a product to buy. JavaScript is used when determining whether the credit card details you entered were valid before transferring those details across the net to the bank for processing. Javascript is now THE language of the web.
+
+In this module you will learn the foundations of JavaScript.  In addition to exploring the common concepts and structures  that underpin most modern programming languages you will emerge from the course with the skills and the knowledge required to go to the next level of fully interactive web development</p>
+
+          <div class="course-item__actions course-actions">
+                  <a href="/courses/course-v1:CodeInstitute+JSF101+2017_T1/info" class="btn btn-orange enter-course" data-course-key="course-v1:CodeInstitute+JSF101+2017_T1">View Course<span class="sr">&nbsp;JavaScript Fundamentals</span></a>
+
+                
+            <div class="wrapper-action-more" data-course-key="course-v1:CodeInstitute+JSF101+2017_T1">
+              <button type="button" class="action action-more" id="actions-dropdown-link-1" aria-haspopup="true" aria-expanded="false" aria-controls="actions-dropdown-1" data-course-number="JSF101" data-course-name="JavaScript Fundamentals" data-dashboard-index="1">
+                <span class="sr">Course options for</span>
+                <span class="sr">&nbsp;
+                  JavaScript Fundamentals
+                </span>
+                <span class="fa fa-cog" aria-hidden="true"></span>
+              </button>
+              <div class="actions-dropdown" id="actions-dropdown-1" tabindex="-1">
+                <ul class="actions-dropdown-list" id="actions-dropdown-list-1" aria-label="Available Actions" role="menu">
+                    <li class="actions-item" id="actions-item-unenroll-1">
+                      <a href="#unenroll-modal" class="action action-unenroll" rel="leanModal" data-course-id="course-v1:CodeInstitute+JSF101+2017_T1" data-course-number="JSF101" data-course-name="JavaScript Fundamentals" data-dashboard-index="1"
+                         data-track-info="Are you sure you want to unenroll from %(course_name)s (%(course_number)s)?">
+                        Unenroll
+                      </a>
+                  </li>
+                  <li class="actions-item" id="actions-item-email-settings-1">
+                        <a href="#email-settings-modal" class="action action-email-settings" rel="leanModal" data-course-id="course-v1:CodeInstitute+JSF101+2017_T1" data-course-number="JSF101" data-dashboard-index="1" data-optout="False">Email Settings</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="wrapper-messages-primary">
+        <ul class="messages-list">
+
+
+
+
+
+
+
+
+        </ul>
+      </footer>
+    </article>
+  </div>
+</li>
+<script>
+ $( document ).ready(function() {
+   if("false" == 'true'){
+     $( "#unregister_block_course" ).click(function() {
+         $('.disable-look-unregister').click();
+     });
+   }
+ });
+</script>
+
+
+  
+  <script type="text/javascript">
+    (function (require) {
+        require(['/static/js/dateutil_factory.f141a7899e5d.js?raw'], function () {
+          require(['js/dateutil_factory'], function (DateUtilFactory) {
+            
+    DateUtilFactory.transform(iterationKey=".localized-datetime");
+
+          });
+        });
+    }).call(this, require || RequireJS.require);
+  </script>
+
+
+        
+          
+            
+              
+                
+                  
+                    
+                      
+                        
+                          
+                            
+                              
+                                
+
+
+
+
+
+
+
+<li class="course-item">
+    
+  <div class="course-container container">
+    <article class="course">
+      
+      <section class="course-item details" aria-labelledby="details-heading-IFD101">
+        <h2 class="hd hd-2 sr" id="details-heading-IFD101">Course details</h2>
+        <div class="wrapper-course-image" aria-hidden="true">
+              <a href="/courses/course-v1:CodeInstitute+IFD101+2017_T3/info" data-course-key="course-v1:CodeInstitute+IFD101+2017_T3" class="course-item__image">
+                <img src="/asset-v1:CodeInstitute+IFD101+2017_T3+type@asset+block@rsz_lms_icon-05.png" class="course-image" alt="IFD101 Interactive Frontend Development Home Page" />
+              </a>
+
+
+          <div class="date-info">
+            
+
+              
+              <span class="info-date-block localized-datetime" data-language="en" data-tooltip="Hi" data-timezone="None" data-datetime="2017-01-01T00:00:00+0000" data-format=shortDate data-string="Started - {date}"></span>
+          </div>
+        </div>
+        <div class="course-item__info">
+          <h1 class="course-name">
+                <a data-course-key="course-v1:CodeInstitute+IFD101+2017_T3" href="/courses/course-v1:CodeInstitute+IFD101+2017_T3/info">Interactive Frontend Development</a>
+          </h1>
+
+            <p class="course-description">In this course you will learn how to bring together elements of HTML, CSS and JavaScript and how to combine them to create interactive web applications. As well as learning how to work data from external applications, such as Spotify</p>
+
+          <div class="course-item__actions course-actions">
+                  <a href="/courses/course-v1:CodeInstitute+IFD101+2017_T3/info" class="btn btn-orange enter-course" data-course-key="course-v1:CodeInstitute+IFD101+2017_T3">View Course<span class="sr">&nbsp;Interactive Frontend Development</span></a>
+
+                
+            <div class="wrapper-action-more" data-course-key="course-v1:CodeInstitute+IFD101+2017_T3">
+              <button type="button" class="action action-more" id="actions-dropdown-link-2" aria-haspopup="true" aria-expanded="false" aria-controls="actions-dropdown-2" data-course-number="IFD101" data-course-name="Interactive Frontend Development" data-dashboard-index="2">
+                <span class="sr">Course options for</span>
+                <span class="sr">&nbsp;
+                  Interactive Frontend Development
+                </span>
+                <span class="fa fa-cog" aria-hidden="true"></span>
+              </button>
+              <div class="actions-dropdown" id="actions-dropdown-2" tabindex="-1">
+                <ul class="actions-dropdown-list" id="actions-dropdown-list-2" aria-label="Available Actions" role="menu">
+                    <li class="actions-item" id="actions-item-unenroll-2">
+                      <a href="#unenroll-modal" class="action action-unenroll" rel="leanModal" data-course-id="course-v1:CodeInstitute+IFD101+2017_T3" data-course-number="IFD101" data-course-name="Interactive Frontend Development" data-dashboard-index="2"
+                         data-track-info="Are you sure you want to unenroll from %(course_name)s (%(course_number)s)?">
+                        Unenroll
+                      </a>
+                  </li>
+                  <li class="actions-item" id="actions-item-email-settings-2">
+                        <a href="#email-settings-modal" class="action action-email-settings" rel="leanModal" data-course-id="course-v1:CodeInstitute+IFD101+2017_T3" data-course-number="IFD101" data-dashboard-index="2" data-optout="False">Email Settings</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="wrapper-messages-primary">
+        <ul class="messages-list">
+
+
+
+
+
+
+
+
+        </ul>
+      </footer>
+    </article>
+  </div>
+</li>
+<script>
+ $( document ).ready(function() {
+   if("false" == 'true'){
+     $( "#unregister_block_course" ).click(function() {
+         $('.disable-look-unregister').click();
+     });
+   }
+ });
+</script>
+
+
+  
+  <script type="text/javascript">
+    (function (require) {
+        require(['/static/js/dateutil_factory.f141a7899e5d.js?raw'], function () {
+          require(['js/dateutil_factory'], function (DateUtilFactory) {
+            
+    DateUtilFactory.transform(iterationKey=".localized-datetime");
+
+          });
+        });
+    }).call(this, require || RequireJS.require);
+  </script>
+
+
+        
+          
+            
+              
+                
+                  
+                    
+                      
+                        
+                          
+                            
+                              
+                                
+
+
+
+
+
+
+
+<li class="course-item">
+    
+  <div class="course-container container">
+    <article class="course">
+      
+      <section class="course-item details" aria-labelledby="details-heading-HF101">
+        <h2 class="hd hd-2 sr" id="details-heading-HF101">Course details</h2>
+        <div class="wrapper-course-image" aria-hidden="true">
+              <a href="/courses/course-v1:CodeInstitute+HF101+2017_T1/info" data-course-key="course-v1:CodeInstitute+HF101+2017_T1" class="course-item__image">
+                <img src="/asset-v1:CodeInstitute+HF101+2017_T1+type@asset+block@rsz_1lms_icon-01.png" class="course-image" alt="HF101 HTML Fundamentals Home Page" />
+              </a>
+
+
+          <div class="date-info">
+            
+
+              
+              <span class="info-date-block localized-datetime" data-language="en" data-tooltip="Hi" data-timezone="None" data-datetime="2017-01-01T00:00:00+0000" data-format=shortDate data-string="Started - {date}"></span>
+          </div>
+        </div>
+        <div class="course-item__info">
+          <h1 class="course-name">
+                <a data-course-key="course-v1:CodeInstitute+HF101+2017_T1" href="/courses/course-v1:CodeInstitute+HF101+2017_T1/info">HTML Fundamentals</a>
+          </h1>
+
+            <p class="course-description">HyperText Markup Language (HTML) is a computer language devised to allow website creation. These websites can then be viewed by anyone else connected to the Internet. It is relatively easy to learn and quite powerful in what it allows you to create
+
+Along with Cascading Style Sheets (CSS) and JavaScript, HTML is part of the trinity that forms the cornerstone of every website. HTML is concerned with content. And it defines the structure of the web pages that we view in our browser every time we go to Facebook, Twitter, Amazon, or any other site. It takes its design and structural cues from print media, allowing us to create headings and paragraphs, insert images, bold and italicise text. And most importantly, it allows us to link to other web pages. 
+
+This course will provide you with the foundations of the HTML language. You’ll learn how to create and organise the structure and content of web pages. And you’ll do this by becoming familiar and experimenting with the surprisingly small number of elements needed to express your ideas in the online world.</p>
+
+          <div class="course-item__actions course-actions">
+                  <a href="/courses/course-v1:CodeInstitute+HF101+2017_T1/info" class="btn btn-orange enter-course" data-course-key="course-v1:CodeInstitute+HF101+2017_T1">View Course<span class="sr">&nbsp;HTML Fundamentals</span></a>
+
+                
+            <div class="wrapper-action-more" data-course-key="course-v1:CodeInstitute+HF101+2017_T1">
+              <button type="button" class="action action-more" id="actions-dropdown-link-3" aria-haspopup="true" aria-expanded="false" aria-controls="actions-dropdown-3" data-course-number="HF101" data-course-name="HTML Fundamentals" data-dashboard-index="3">
+                <span class="sr">Course options for</span>
+                <span class="sr">&nbsp;
+                  HTML Fundamentals
+                </span>
+                <span class="fa fa-cog" aria-hidden="true"></span>
+              </button>
+              <div class="actions-dropdown" id="actions-dropdown-3" tabindex="-1">
+                <ul class="actions-dropdown-list" id="actions-dropdown-list-3" aria-label="Available Actions" role="menu">
+                    <li class="actions-item" id="actions-item-unenroll-3">
+                      <a href="#unenroll-modal" class="action action-unenroll" rel="leanModal" data-course-id="course-v1:CodeInstitute+HF101+2017_T1" data-course-number="HF101" data-course-name="HTML Fundamentals" data-dashboard-index="3"
+                         data-track-info="Are you sure you want to unenroll from %(course_name)s (%(course_number)s)?">
+                        Unenroll
+                      </a>
+                  </li>
+                  <li class="actions-item" id="actions-item-email-settings-3">
+                        <a href="#email-settings-modal" class="action action-email-settings" rel="leanModal" data-course-id="course-v1:CodeInstitute+HF101+2017_T1" data-course-number="HF101" data-dashboard-index="3" data-optout="False">Email Settings</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="wrapper-messages-primary">
+        <ul class="messages-list">
+
+
+
+
+
+
+
+
+        </ul>
+      </footer>
+    </article>
+  </div>
+</li>
+<script>
+ $( document ).ready(function() {
+   if("false" == 'true'){
+     $( "#unregister_block_course" ).click(function() {
+         $('.disable-look-unregister').click();
+     });
+   }
+ });
+</script>
+
+
+  
+  <script type="text/javascript">
+    (function (require) {
+        require(['/static/js/dateutil_factory.f141a7899e5d.js?raw'], function () {
+          require(['js/dateutil_factory'], function (DateUtilFactory) {
+            
+    DateUtilFactory.transform(iterationKey=".localized-datetime");
+
+          });
+        });
+    }).call(this, require || RequireJS.require);
+  </script>
+
+
+        
+          
+            
+              
+                
+                  
+                    
+                      
+                        
+                          
+                            
+                              
+                                
+
+
+
+
+
+
+
+<li class="course-item">
+    
+  <div class="course-container container">
+    <article class="course">
+      
+      <section class="course-item details" aria-labelledby="details-heading-FE">
+        <h2 class="hd hd-2 sr" id="details-heading-FE">Course details</h2>
+        <div class="wrapper-course-image" aria-hidden="true">
+              <a href="/courses/course-v1:codeinstitute+FE+2017_T3/info" data-course-key="course-v1:codeinstitute+FE+2017_T3" class="course-item__image">
+                <img src="/asset-v1:codeinstitute+FE+2017_T3+type@asset+block@rsz_lms_icon-03.png" class="course-image" alt="FE User Centric Frontend Development Home Page" />
+              </a>
+
+
+          <div class="date-info">
+            
+
+              
+              <span class="info-date-block localized-datetime" data-language="en" data-tooltip="Hi" data-timezone="None" data-datetime="2017-01-01T00:00:00+0000" data-format=shortDate data-string="Started - {date}"></span>
+          </div>
+        </div>
+        <div class="course-item__info">
+          <h1 class="course-name">
+                <a data-course-key="course-v1:codeinstitute+FE+2017_T3" href="/courses/course-v1:codeinstitute+FE+2017_T3/info">User Centric Frontend Development</a>
+          </h1>
+
+            <p class="course-description">Front end developers use HTML, CSS, and JavaScript to code the website and web app designs created by web designers. The code they write runs inside the user’s browser (as opposed to a back end developer, whose code runs on the web server). Think of it a little like this: the back end developer is like the engineer who designs and creates the systems that make a city work (electricity, water and sewer, zoning, etc.), while the front end developer is the one who lays out the streets and makes sure everything is connected properly so people can live their lives (a simplified analogy, but you get the rough idea). They’re also in charge of making sure that there are no errors or bugs on the front end, as well as making sure that the design appears as it’s supposed to across various platforms and browsers. In this module you&#39;ll learn the skills, tools and languages needed to create great web based user centered experiences.</p>
+
+          <div class="course-item__actions course-actions">
+                  <a href="/courses/course-v1:codeinstitute+FE+2017_T3/info" class="btn btn-orange enter-course" data-course-key="course-v1:codeinstitute+FE+2017_T3">View Course<span class="sr">&nbsp;User Centric Frontend Development</span></a>
+
+                
+            <div class="wrapper-action-more" data-course-key="course-v1:codeinstitute+FE+2017_T3">
+              <button type="button" class="action action-more" id="actions-dropdown-link-4" aria-haspopup="true" aria-expanded="false" aria-controls="actions-dropdown-4" data-course-number="FE" data-course-name="User Centric Frontend Development" data-dashboard-index="4">
+                <span class="sr">Course options for</span>
+                <span class="sr">&nbsp;
+                  User Centric Frontend Development
+                </span>
+                <span class="fa fa-cog" aria-hidden="true"></span>
+              </button>
+              <div class="actions-dropdown" id="actions-dropdown-4" tabindex="-1">
+                <ul class="actions-dropdown-list" id="actions-dropdown-list-4" aria-label="Available Actions" role="menu">
+                    <li class="actions-item" id="actions-item-unenroll-4">
+                      <a href="#unenroll-modal" class="action action-unenroll" rel="leanModal" data-course-id="course-v1:codeinstitute+FE+2017_T3" data-course-number="FE" data-course-name="User Centric Frontend Development" data-dashboard-index="4"
+                         data-track-info="Are you sure you want to unenroll from %(course_name)s (%(course_number)s)?">
+                        Unenroll
+                      </a>
+                  </li>
+                  <li class="actions-item" id="actions-item-email-settings-4">
+                        <a href="#email-settings-modal" class="action action-email-settings" rel="leanModal" data-course-id="course-v1:codeinstitute+FE+2017_T3" data-course-number="FE" data-dashboard-index="4" data-optout="False">Email Settings</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="wrapper-messages-primary">
+        <ul class="messages-list">
+
+
+
+
+
+
+
+
+        </ul>
+      </footer>
+    </article>
+  </div>
+</li>
+<script>
+ $( document ).ready(function() {
+   if("false" == 'true'){
+     $( "#unregister_block_course" ).click(function() {
+         $('.disable-look-unregister').click();
+     });
+   }
+ });
+</script>
+
+
+  
+  <script type="text/javascript">
+    (function (require) {
+        require(['/static/js/dateutil_factory.f141a7899e5d.js?raw'], function () {
+          require(['js/dateutil_factory'], function (DateUtilFactory) {
+            
+    DateUtilFactory.transform(iterationKey=".localized-datetime");
+
+          });
+        });
+    }).call(this, require || RequireJS.require);
+  </script>
+
+
+        
+          
+            
+              
+                
+                  
+                    
+                      
+                        
+                          
+                            
+                              
+                                
+
+
+
+
+
+
+
+<li class="course-item">
+    
+  <div class="course-container container">
+    <article class="course">
+      
+      <section class="course-item details" aria-labelledby="details-heading-CF101">
+        <h2 class="hd hd-2 sr" id="details-heading-CF101">Course details</h2>
+        <div class="wrapper-course-image" aria-hidden="true">
+              <a href="/courses/course-v1:CodeInstitute+CF101+2017_T1/info" data-course-key="course-v1:CodeInstitute+CF101+2017_T1" class="course-item__image">
+                <img src="/asset-v1:CodeInstitute+CF101+2017_T1+type@asset+block@rsz_1lms_icon-02.png" class="course-image" alt="CF101 CSS Fundamentals Home Page" />
+              </a>
+
+
+          <div class="date-info">
+            
+
+              
+              <span class="info-date-block localized-datetime" data-language="en" data-tooltip="Hi" data-timezone="None" data-datetime="2017-01-01T00:00:00+0000" data-format=shortDate data-string="Started - {date}"></span>
+          </div>
+        </div>
+        <div class="course-item__info">
+          <h1 class="course-name">
+                <a data-course-key="course-v1:CodeInstitute+CF101+2017_T1" href="/courses/course-v1:CodeInstitute+CF101+2017_T1/info">CSS Fundamentals</a>
+          </h1>
+
+            <p class="course-description">With the growing popularity of HTML, it began to incorporate a lot of stylistic features, allowing developers to change the colours and size of the font, background colour and more. This led to a growing complexity of HTML, making it more difficult to use. In order to get around this, Tim Berners-Lee and Håkon Wium Lie decided to remove the stylistic approach from HTML, so it would remain a purely presentational language, and move the stylistic aspects into a separate language called Cascading Style Sheets (CSS)
+
+Cascading Stylesheets (CSS) allows developers to provide the visual impact for websites without having to write complex HTML. CSS doesn’t even have to be written into a .html file, and could be linked to from anywhere on the web, allowing for the sharing of style sheets, a practice that is commonly used by developers today.
+
+In this module you will learn the foundations of CSS. CSS allows you to enhance the User Experience (UX) for web pages. You’ll learn how to style and modify the elements that you’ve created in HTML pages, how to layout your elements in a balanced way. You’ll learn how work with different types of fonts, and much more.</p>
+
+          <div class="course-item__actions course-actions">
+                  <a href="/courses/course-v1:CodeInstitute+CF101+2017_T1/info" class="btn btn-orange enter-course" data-course-key="course-v1:CodeInstitute+CF101+2017_T1">View Course<span class="sr">&nbsp;CSS Fundamentals</span></a>
+
+                
+            <div class="wrapper-action-more" data-course-key="course-v1:CodeInstitute+CF101+2017_T1">
+              <button type="button" class="action action-more" id="actions-dropdown-link-5" aria-haspopup="true" aria-expanded="false" aria-controls="actions-dropdown-5" data-course-number="CF101" data-course-name="CSS Fundamentals" data-dashboard-index="5">
+                <span class="sr">Course options for</span>
+                <span class="sr">&nbsp;
+                  CSS Fundamentals
+                </span>
+                <span class="fa fa-cog" aria-hidden="true"></span>
+              </button>
+              <div class="actions-dropdown" id="actions-dropdown-5" tabindex="-1">
+                <ul class="actions-dropdown-list" id="actions-dropdown-list-5" aria-label="Available Actions" role="menu">
+                    <li class="actions-item" id="actions-item-unenroll-5">
+                      <a href="#unenroll-modal" class="action action-unenroll" rel="leanModal" data-course-id="course-v1:CodeInstitute+CF101+2017_T1" data-course-number="CF101" data-course-name="CSS Fundamentals" data-dashboard-index="5"
+                         data-track-info="Are you sure you want to unenroll from %(course_name)s (%(course_number)s)?">
+                        Unenroll
+                      </a>
+                  </li>
+                  <li class="actions-item" id="actions-item-email-settings-5">
+                        <a href="#email-settings-modal" class="action action-email-settings" rel="leanModal" data-course-id="course-v1:CodeInstitute+CF101+2017_T1" data-course-number="CF101" data-dashboard-index="5" data-optout="False">Email Settings</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="wrapper-messages-primary">
+        <ul class="messages-list">
+
+
+
+
+
+
+
+
+        </ul>
+      </footer>
+    </article>
+  </div>
+</li>
+<script>
+ $( document ).ready(function() {
+   if("false" == 'true'){
+     $( "#unregister_block_course" ).click(function() {
+         $('.disable-look-unregister').click();
+     });
+   }
+ });
+</script>
+
+
+  
+  <script type="text/javascript">
+    (function (require) {
+        require(['/static/js/dateutil_factory.f141a7899e5d.js?raw'], function () {
+          require(['js/dateutil_factory'], function (DateUtilFactory) {
+            
+    DateUtilFactory.transform(iterationKey=".localized-datetime");
+
+          });
+        });
+    }).call(this, require || RequireJS.require);
+  </script>
+
+
+
+        </ul>
+
+    </div>
+
+
+  </div>
+</main>
+
+<div id="email-settings-modal" class="modal" aria-hidden="true">
+  <div class="inner-wrapper" role="dialog" aria-labelledby="email-settings-title">
+    <button class="close-modal">
+      <span class="icon fa fa-remove" aria-hidden="true"></span>
+      <span class="sr">
+        Close
+      </span>
+    </button>
+
+    <header>
+      <h2 id="email-settings-title">
+        Email Settings for <span id="email_settings_course_number"></span>
+        <span class="sr">,
+          window open
+        </span>
+      </h2>
+      <hr/>
+    </header>
+
+    <form id="email_settings_form" method="post">
+      <input name="course_id" id="email_settings_course_id" type="hidden" />
+      <label>Receive course emails <input type="checkbox" id="receive_emails" name="receive_emails" /></label>
+      <div class="submit">
+        <input type="submit" id="submit" value="Save Settings" />
+      </div>
+    </form>
+  </div>
+</div>
+
+<div id="unenroll-modal" class="modal unenroll-modal" aria-hidden="true">
+  <div class="inner-wrapper" role="dialog" aria-labelledby="unenrollment-modal-title">
+    <button class="close-modal">
+      <span class="icon fa fa-remove" aria-hidden="true"></span>
+      <span class="sr">
+        Close
+      </span>
+    </button>
+
+    <header>
+      <h2 id="unenrollment-modal-title">
+        <span id='track-info'></span>
+        <span id='refund-info'></span>
+        <span class="sr">,
+          window open
+        </span>
+      </h2>
+      <hr/>
+    </header>
+    <div id="unenroll_error" class="modal-form-error"></div>
+    <form id="unenroll_form" method="post" data-remote="true" action="/change_enrollment">
+      <input name="course_id" id="unenroll_course_id" type="hidden" />
+      <input name="enrollment_action" type="hidden" value="unenroll" />
+      <div class="submit">
+        <input name="submit" type="submit" value="Unenroll" />
+      </div>
+    </form>
+  </div>
+</div>
+
+      
+    </div>
+
+        
+
+
+<div class="wrapper wrapper-footer">
+  <footer>
+    <nav>
+      <ul>
+        <li>
+          <a href="/about">About</a>
+        </li>
+        <li>
+          <a href="/contact">Contact</a>
+        </li>
+        <li>
+          <a href="/tos">Terms of Service</a>
+        </li>
+        <li>
+          <a href="/privacy">Privacy</a>
+        </li>
+        <li>
+          <a href="/honor">Policy Honor</a>
+        </li>
+        <li>
+          <a href="/faq">FAQ</a>
+        </li>
+      </ul>
+    </nav>
+  </footer>
+</div>
+
+
+<!-- Scripts for sidebarNav and footer sticky -->
+<script type="text/javascript">
+  // footer sticky
+  if ($(window).innerHeight() > $('.window-wrap').innerHeight()) {
+    $('.content-wrapper').css('min-height', $(window).innerHeight() - $('.header-global').innerHeight() - $('.wrapper-footer').innerHeight());
+  }
+</script>
+
+
+  </div>
+
+  
+  <script src="/static/js/commerce/credit.b62c97352d2a.js"></script>
+  
+    <script type="text/javascript" src="/static/code-institute-ficus/js/dashboard.3fd8fff9d292.js" charset="utf-8"></script>
+
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      edx.dashboard.legacy.init({
+        dashboard: "/dashboard",
+        signInUser: "/login",
+        changeEmailSettings: "/change_email_settings"
+      });
+    });
+  </script>
+    
+    
+      <script type="text/javascript" src="/static/course_search/js/dashboard_search_factory.a34d47cd2fb5.js?raw"></script>
+    <script type="text/javascript">
+        (function (require) {
+            require(['course_search/js/dashboard_search_factory'], function (DashboardSearchFactory) {
+                
+        DashboardSearchFactory();
+    
+            });
+        }).call(this, require || RequireJS.require);
+    </script>
+
+
+
+  
+
+
+
+  <script type="text/javascript" src="/static/js/vendor/noreferrer.aa62a3e70ffa.js" charset="utf-8"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intro.js/2.5.0/intro.min.js"></script>
+  <script type="text/javascript" src="/static/js/utils/navigation.323bf3e1ae16.js" charset="utf-8"></script>
+  <script type="text/javascript" src="/static/code-institute-ficus/scripts/iframes.d716724cc2cf.js" charset="utf-8"></script>
+  <script src="/static/code-institute-ficus/js/intercomlauncher.76ac16ad5ce3.js"></script>
+  
+</body>
+</html>
+
+
+
+<!-- Performance beacon for onload times -->
