@@ -1,9 +1,10 @@
 body { 
-    font-family: 'CostaRicaNormal'; 
+    font-family: 'CostaRicaNormal';
     font-weight: normal; 
     font-style: normal;
     font-size: 11px;
     color: #25b8db;
+    text-transform: capitalize;
     background: url("https://www.killerrobots.com/starwarsscroll/starwarsscroll_2.jpg") no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
